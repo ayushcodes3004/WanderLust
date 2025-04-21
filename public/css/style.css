@@ -1,0 +1,113 @@
+body{
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;
+
+}
+.container{
+    flex:1;
+}
+/* Navbar */
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color:#222222 !important;
+}
+
+/* Footer */
+.f-info-links, .f-info-socials, .f-info-brand{
+    /* text-decoration: none;
+    color: #222222;
+    display: flex;
+    gap: 1rem; */
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1.2rem;
+}
+
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.5;
+    background-color: white;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* New Page */
+
+.add-btn {
+    background-color: #fe424d !important;
+    color: white;
+    border: none !important;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+/* show page */
+.show-img{
+    height:30vh;
+
+}
+
+.star-rating-display {
+    transform: scale(0.6); /* Makes the stars 60% of original size */
+    transform-origin: left; /* Keeps the stars aligned to the left */
+    margin-bottom: -5px; /* Adjusts vertical spacing */
+}
